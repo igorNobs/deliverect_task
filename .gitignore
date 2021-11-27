@@ -3,7 +3,6 @@
 *.pot
 *.pyc
 __pycache__
-db.sqlite3
 media
 
 # Distribution / packaging
@@ -56,6 +55,7 @@ venv
 
 
 # Visual Studio Code #
+.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
