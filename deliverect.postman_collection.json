@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "a7bc359f-cbfb-4873-9f73-e7fa49ef3dad",
+		"name": "deliverect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Menu Item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Pasta Fetuccini\",\n\t\"description\": \"eat pasta, grow fasta\",\n\t\"price\": 18.99,\n\t\"quantity\": 8\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/pos/menu/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pos",
+						"menu",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retieve menu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/pos/menu/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pos",
+						"menu",
+						""
+					]
+				},
+				"description": "Retrieve menu"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete menu item",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/pos/menu/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pos",
+						"menu",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"note\": \"Some other stuff\",\n    \"order_items\": [\n        {\n            \"item\": 1,\n            \"quantity\": 2\n        },\n        {\n            \"item\": 2,\n            \"quantity\": 1\n        }\n    ]\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8000/pos/order/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pos",
+						"order",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Pasta Fetuccini\",\n\t\"description\": \"eat pasta, grow fasta\",\n\t\"price\": 18.99,\n\t\"quantity\": 8\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/pos/order/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pos",
+						"order",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"note\": \"Some other stuff2\",\n    \"order_items\": [\n        {\n            \"item\": 1,\n            \"quantity\": 3\n        },\n        {\n            \"item\": 2,\n            \"quantity\": 3\n        }\n    ]\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8000/pos/order/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pos",
+						"order",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
