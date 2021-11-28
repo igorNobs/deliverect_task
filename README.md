@@ -1,8 +1,10 @@
 ## deliverect_task
-Test task for Deliverect
-I used python 3.7 and Django 3.2 + Django Rest Framework 3.12
+Test task for Deliverect.
+<br />
+I used python 3.7 and Django 3.2 + Django Rest Framework 3.12.
+<br />
 Application uses an sqlite database.
-
+<br />
 ### Aplication start steps:
 1. Create virtual environment (I used virtualenv).
 > virtualenv venv
