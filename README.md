@@ -5,6 +5,8 @@ I used python 3.7 and Django 3.2 + Django Rest Framework 3.12.
 <br />
 Application uses an sqlite database.
 <br />
+You can find deliverect postman collection in root of the project. It has some HTTP calls I used for testing the application. Hopefully everything looks pretty self-explanatory if you look at urls.py and views.py under ./pos folder.
+
 ### Aplication start steps:
 
 1. Create virtual environment (I used virtualenv).
