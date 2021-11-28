@@ -105,7 +105,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"note\": \"Some other stuff\",\n    \"order_items\": [\n        {\n            \"item\": 1,\n            \"quantity\": 2\n        },\n        {\n            \"item\": 2,\n            \"quantity\": 1\n        }\n    ]\n}\n"
+					"raw": "{\n    \"note\": \"Leave food at the door\",\n    \"order_items\": [\n        {\n            \"item\": 2,\n            \"quantity\": 1\n        }\n    ]\n}\n"
 				},
 				"url": {
 					"raw": "http://localhost:8000/pos/order/",
@@ -142,7 +142,7 @@
 					"raw": "{\n\t\"name\": \"Pasta Fetuccini\",\n\t\"description\": \"eat pasta, grow fasta\",\n\t\"price\": 18.99,\n\t\"quantity\": 8\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8000/pos/order/3/",
+					"raw": "http://localhost:8000/pos/order/1/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -151,7 +151,7 @@
 					"path": [
 						"pos",
 						"order",
-						"3",
+						"1",
 						""
 					]
 				}
@@ -171,7 +171,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"note\": \"Some other stuff2\",\n    \"order_items\": [\n        {\n            \"item\": 1,\n            \"quantity\": 3\n        },\n        {\n            \"item\": 2,\n            \"quantity\": 3\n        }\n    ]\n}\n"
+					"raw": "{\n    \"note\": \"Another note\",\n    \"order_items\": [\n        {\n            \"item\": 2,\n            \"quantity\": 5\n        }\n    ]\n}\n"
 				},
 				"url": {
 					"raw": "http://localhost:8000/pos/order/1/",
