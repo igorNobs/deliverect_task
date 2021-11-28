@@ -16,8 +16,10 @@ Application uses an sqlite database.
 > python manage.py migrate
 5. run application
 > cd ./deliverect
+<br />
 > python manage.py runserver
 
-### Run unit tests
+### Running unit tests
 > cd ./deliverect
+<br />
 > python manage.py test
